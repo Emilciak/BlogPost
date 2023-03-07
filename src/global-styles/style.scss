@@ -1,0 +1,20 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+@import "styles/card-component.scss";
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-primary);
+  height: 100vh;
+  font-size: 16px;
+}
+
+
+#home-page{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

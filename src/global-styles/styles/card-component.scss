@@ -1,0 +1,176 @@
+.card {
+	max-width: 700px;
+	margin: 30px;
+	border-radius: 10px;
+	background-color: var(--color-pure-cream);
+
+	& &__href {
+		text-decoration: none;
+	}
+
+	 & &__img {
+		margin: 20px;
+		border-radius: 10px;
+		overflow: hidden;
+		&-blogimg {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			background-position: center;
+			max-height: 200px;
+			border-radius: 10px;
+			transition: transform 0.3s;
+		}
+	}
+
+	& &__author {
+		position: relative;
+		font-size: 0.75rem;
+		color: var(--color-primary);
+
+		&-img {
+			width: 40px;
+			height: 40px;
+			margin-left: 20px;
+			border-radius: 50%;
+		}
+		&-name,
+		&-text {
+			position: absolute;
+			top: 0;
+		}
+		&-name {
+			font-weight: 400;
+			left: 73px;
+		}
+		&-text {
+			font-weight: 300;
+			right: 20px;
+		}
+	}
+
+	& &__h1 {
+		margin: 20px;
+		font-size: 1.125rem;
+		color: var(--color-primary);
+	}
+	& &__text {
+		margin: 0 20px;
+		font-size: 0.875rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		color: var(--color-secondary);
+	}
+	& &__more {
+		margin: 20px;
+		position: relative;
+		&-link {
+			font-size: 0.75rem;
+			font-weight: 600;
+			position: relative;
+			text-decoration: none;
+			color: var(--color-primary);
+		}
+	}
+
+	&:hover &{
+		 &__img {
+			z-index: 1;
+			&-blogimg {
+				transform: scale(1.1);
+				border-radius: 10px;
+				z-index: 2;
+			}
+		}
+
+		&__more {
+			&-link {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+//MEDIA
+@media (min-width: 576px) {
+	.card {
+		& &__img {
+			&-blogimg {
+				max-height: 360px;
+			}
+		}
+
+		 & &__author {
+			font-size: 0.875rem;
+			&-img {
+				width: 60px;
+				height: 60px;
+			}
+			&-name,
+			&-text {
+				top: 10px;
+			}
+			&-name {
+				left: 100px;
+			}
+			&-text {
+				right: 20px;
+			}
+		}
+
+		& &__h1 {
+			font-size: 1.5rem;
+		}
+		& &__text {
+			font-size: 1rem;
+		}
+		& &__more {
+			&-link {
+				font-size: 0.875rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.card {
+		& &__img {
+			&-blogimg {
+				max-height: 400px;
+			}
+		}
+
+		 & &__author {
+			font-size: 0.9rem;
+			&-img {
+				width: 60px;
+				height: 60px;
+			}
+			&-name,
+			&-text {
+				top: 10px;
+			}
+			&-name {
+				left: 100px;
+			}
+			&-text {
+				right: 20px;
+			}
+		}
+
+		& &__h1 {
+			font-size: 1.5rem;
+		}
+		& &__text {
+			font-size: 1rem;
+		}
+		& &__more {
+			&-link {
+				font-size: 0.875rem;
+			}
+		}
+	}
+}
