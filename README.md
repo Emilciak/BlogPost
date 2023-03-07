@@ -1,8 +1,5 @@
 # BlogPost
 
 --> https://emilciak.github.io/BlogPost/
-<p align="center">
-![image](https://user-images.githubusercontent.com/123416845/223558429-fa5a7979-f1e6-4e9e-bdd9-30711c13a405.png)
 
-![image](https://user-images.githubusercontent.com/123416845/223578427-a076313b-46a6-4ae9-bc4c-2dbffe8559ab.png)
-</p>
+< img src:"https://user-images.githubusercontent.com/123416845/223578893-3fe27811-88f6-4cad-ad76-8f4314726dfe.png">
